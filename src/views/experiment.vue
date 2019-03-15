@@ -73,7 +73,8 @@ export default {
       divWidth: 100,
       fontSize: 14,
       user: '',
-      fileData: {}
+      fileData: {},
+      startTime: ''
     }
   },
   computed: {
@@ -113,6 +114,7 @@ export default {
       this.status = 'init'
       // 记录初始数据
       this.divWidth === 100 ? this.resizeHandler() : this.divWidth = 100
+      this.startTime = new Date().getTime()
     },
     // 进入阅读实验
     readExp() {
@@ -122,6 +124,9 @@ export default {
     },
     // 结束实验
     endExp() {
+      // 计算、记录实验时间
+      let duration = new Date().getTime() - this.startTime
+      this.fileData[this.user].duration = duration
       this.status = 'before'
       this.user = ''
       this.inputDisabled = false
