@@ -25,8 +25,8 @@
         </el-select>
       </div>
     </div>
-    <div id="init-chart"></div>
-    <div id="read-chart"></div>
+    <div ref="initChart"></div>
+    <div ref="readChart"></div>
   </div>
 </template>
 
@@ -79,8 +79,8 @@ export default {
     }
   },
   mounted() {
-    this.initChart = echarts.init(document.querySelector('#init-chart'))
-    this.readChart = echarts.init(document.querySelector('#read-chart'))
+    this.initChart = echarts.init(this.$refs.initChart)
+    this.readChart = echarts.init(this.$refs.readChart)
   },
   watch: {
     initSeries: {
