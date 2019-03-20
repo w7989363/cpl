@@ -25,8 +25,8 @@
         </el-select>
       </div>
     </div>
-    <div ref="initChart"></div>
-    <div ref="readChart"></div>
+    <div ref="initChart" id="init-chart"></div>
+    <div ref="readChart" id="read-chart"></div>
   </div>
 </template>
 
