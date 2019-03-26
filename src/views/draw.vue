@@ -76,6 +76,9 @@ export default {
     },
     legendData() {
       return this.drawTarget === 'all' ? Object.keys(this.fileData) : [this.drawTarget]
+    },
+    gridTop() {
+      return Math.ceil(this.legendData.length / 13) * 35
     }
   },
   mounted() {
@@ -152,6 +155,9 @@ export default {
         legend: {
           data: this.legendData
         },
+        grid: {
+          top: this.gridTop
+        },
         xAxis: {
           name: '调整次数',
           type: 'category',
@@ -169,7 +175,7 @@ export default {
           trigger: 'axis'
         },
         toolbox: {
-          right: 20,
+          top: 100,
           feature: {
             dataView: {},
             saveAsImage: {}
