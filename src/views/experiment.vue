@@ -173,6 +173,7 @@ export default {
   border: 1px solid black;
   padding: 10px;
   margin: 30px 0px;
+  font-size: 14px;
   line-height: 1.5;
 }
 ul {
