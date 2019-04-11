@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="container" :style="{fontSize: fontSize+'px', width: divWidth+'%'}">
+    <div class="container" :style="containerStyle">
       <p>什么是阿里云提货券？</p>
       <p>阿里云提货券是用于提取阿里云指定规格云产品的一种票据凭证的产品。目前提货券在阿里云官网和天猫旗舰店均有销售。每个提货券都对应着云产品的不同规格配置。用户购买该提货券后，在指定的有效期内可对提货券对应的云产品进行开通使用。提货券还具有转移功能。未使用的提货券能够被拥有者转移给其他阿里云用户。获得提货券的用户，可使用该提货券来开通对应的云产品。</p>
       <p>如何使用提货券？</p>
@@ -71,6 +71,7 @@ export default {
       status: 'before',
       divWidth: 100,
       fontSize: 14,
+      lineHeight: 1.5,
       user: '',
       fileData: {},
       startTime: ''
@@ -85,6 +86,13 @@ export default {
     },
     expType() {
       return this.states[this.status].expType
+    },
+    containerStyle() {
+      return {
+        fontSize: this.fontSize + 'px',
+        lineHeight: this.lineHeight,
+        width: this.divWidth + '%'
+      }
     }
   },
   watch:{
@@ -173,8 +181,6 @@ export default {
   border: 1px solid black;
   padding: 10px;
   margin: 30px 0px;
-  font-size: 14px;
-  line-height: 1.5;
 }
 ul {
   list-style-type: none;
