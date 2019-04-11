@@ -181,7 +181,6 @@ export default {
 .page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .control-form {
