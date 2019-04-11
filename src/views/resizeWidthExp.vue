@@ -47,7 +47,7 @@ import debounce from 'lodash.debounce'
 import { saveAs } from 'file-saver'
 import dayjs from 'dayjs'
 export default {
-  name: 'Experiment',
+  name: 'resizeWidthExp',
   data() {
     return {
       inputDisabled: false,
