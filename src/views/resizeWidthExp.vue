@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <div class="control-form">
       <div class="form-item">
         <el-input type="text" placeholder="请输入编号" v-model="user" size="mini" :disabled="inputDisabled">
@@ -165,6 +165,11 @@ export default {
 </script>
 
 <style>
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .control-form {
   font-size: 12px;
   width: 400px;

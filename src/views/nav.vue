@@ -3,6 +3,7 @@
     <el-button @click = "goTo('ResizeWidthExp')">调整宽度实验</el-button>
     <el-button @click = "goTo('AdjustCplExp')">调整cpl实验</el-button>
     <el-button @click = "goTo('Draw')">画图</el-button>
+    <el-button @click = "goTo('StartInfo')">实验二</el-button>
   </div>
 </template>
 
