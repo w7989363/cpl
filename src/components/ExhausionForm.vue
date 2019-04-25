@@ -2,67 +2,67 @@
   <div>
     <h2>视觉疲劳度量(按照描述词选择程度)</h2>
     <div class="form-item">
-      <span>累：</span>
+      <div>累：</div>
       <el-rate v-model="exhausion.lei" :max="10" />
     </div>
     <div class="form-item">
-      <span>困：</span>
+      <div>困：</div>
       <el-rate v-model="exhausion.kun" :max="10" />
     </div>
     <div class="form-item">
-      <span>瞌睡：</span>
+      <div>瞌睡：</div>
       <el-rate v-model="exhausion.keshui" :max="10" />
     </div>
     <div class="form-item">
-      <span>疲乏：</span>
+      <div>疲乏：</div>
       <el-rate v-model="exhausion.pifa" :max="10" />
     </div>
     <div class="form-item">
-      <span>筋疲力尽：</span>
+      <div>筋疲力尽：</div>
       <el-rate v-model="exhausion.jinpilijin" :max="10" />
     </div>
     <div class="form-item">
-      <span>精力充沛：</span>
+      <div>精力充沛：</div>
       <el-rate v-model="exhausion.jinglichongpei" :max="10" />
     </div>
     <div class="form-item">
-      <span>积极活跃：</span>
+      <div>积极活跃：</div>
       <el-rate v-model="exhausion.jijihuoyue" :max="10" />
     </div>
     <div class="form-item">
-      <span>精力旺盛：</span>
+      <div>精力旺盛：</div>
       <el-rate v-model="exhausion.jingliwangsheng" :max="10" />
     </div>
     <div class="form-item">
-      <span>有效率：</span>
+      <div>有效率：</div>
       <el-rate v-model="exhausion.youxiaolv" :max="10" />
     </div>
     <div class="form-item">
-      <span>生气：</span>
+      <div>生气：</div>
       <el-rate v-model="exhausion.shengqi" :max="10" />
     </div>
     <div class="form-item">
-      <span>疲倦：</span>
+      <div>疲倦：</div>
       <el-rate v-model="exhausion.pijuan" :max="10" />
     </div>
     <div class="form-item">
-      <span>精疲力竭：</span>
+      <div>精疲力竭：</div>
       <el-rate v-model="exhausion.jingpilijie" :max="10" />
     </div>
     <div class="form-item">
-      <span>集中精力费力：</span>
+      <div>集中精力费力：</div>
       <el-rate v-model="exhausion.jizhongjinglifeili" :max="10" />
     </div>
     <div class="form-item">
-      <span>对话费力：</span>
+      <div>对话费力：</div>
       <el-rate v-model="exhausion.duihuafeili" :max="10" />
     </div>
     <div class="form-item">
-      <span>想闭眼：</span>
+      <div>想闭眼：</div>
       <el-rate v-model="exhausion.xiangbiyan" :max="10" />
     </div>
     <div class="form-item">
-      <span>想躺下：</span>
+      <div>想躺下：</div>
       <el-rate v-model="exhausion.xiangtangxia" :max="10" />
     </div>
   </div>
@@ -98,6 +98,11 @@ export default {
 }
 </script>
 
-<style lang="less">
-  
+<style lang="less" scoped>
+.form-item {
+  margin-bottom: 15px;
+  div:first-child {
+    margin-bottom: 5px;
+  }
+}
 </style>
