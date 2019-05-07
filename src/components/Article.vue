@@ -1,5 +1,5 @@
 <template>
-<div :style="currentStyle">
+<div :style="currentStyle" class="article">
   <div v-if="articleIndex === 0">
     <h2>自定义键盘快捷键</h2>
     <hr />
@@ -511,5 +511,10 @@ export default {
 </script>
 
 <style lang="less">
-
+@import url('../assets/github.less');
+.article {
+  * {
+    margin: 0;
+  }
+}
 </style>

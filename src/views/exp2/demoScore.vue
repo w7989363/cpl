@@ -71,8 +71,9 @@ export default {
 .article-container {
   box-sizing: content-box;
   font-family: "SimSun";
-  border: 1px solid black;
-  padding: 10px;
+  border-left: 1px solid #dfe2e5;
+  border-right: 1px solid #dfe2e5;
+  padding: 40px;
   margin: 30px 0px;
 }
 .rate {
